@@ -3,28 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>森の工房 お問い合わせ</title>
+
 <style>
 
 a	{color: #017acd}
 
 /* コンテナ */
-div#container	{width: 760px;
+div#container	{
+	width: 760px;
 	margin-left: auto;
 	margin-right: auto}
 
 /* ヘッダー */
-div#header	{background-color: #017acd;
+header	{
+	background-color: #017acd;
 	background-image: url(sky.jpg);
-	padding: 28px 20px 98px}
+	padding: 28px 0 0}
 
-div#header h1	{margin: 0}
+header h1	{margin: 0 0 0 20px}
 
-div#header p	{color: #ffffff;
+header p	{color: #ffffff;
 	font-size: 0.75em;
-	margin: 0}
+	margin: 0 0 98px 20px}
 
 /* メニュー */
-ul#menu	{font-size: 0.75em;
+nav ul	{
+	font-size: 0.75em;
 	margin-top: 0;
 	margin-bottom: 30px;
 	margin-left: 0;
@@ -32,10 +36,12 @@ ul#menu	{font-size: 0.75em;
 	height: 30px;
 	background-color: #005087}
 
-ul#menu li	{list-style-type: none;
+nav ul li	{
+	list-style-type: none;
 	float: left}
 
-ul#menu li a	{display: block;
+nav ul li a	{
+	display: block;
 	width: 120px;
 	line-height: 30px;
 	text-decoration: none;
@@ -44,14 +50,16 @@ ul#menu li a	{display: block;
 	background-color: #005087;
 	border-right: solid 1px #ffffff}
 
-ul#menu li a:hover	{background-color: #017acd}
+nav ul li a:hover	{background-color: #017acd}
 
 /* コンテンツ */
-div#content	{width: 564px;
+article	{
+	width: 564px;
 	margin-left: auto;
 	margin-right: auto}
 
-div#content h2	{background-color: #014471;
+article h1	{
+	background-color: #014471;
 	background-image: url(bar-darkblue.png);
 	background-repeat: no-repeat;
 	font-size: 1em;
@@ -60,38 +68,36 @@ div#content h2	{background-color: #014471;
 	padding-left: 12px;
 	margin-bottom: 0}
 
-div#content h3	{background-color: #ffffff;
-	background-image: url(maru-skyblue.png);
-	background-repeat: no-repeat;
-	background-position: 0px 2px;
-	font-size: 0.875em;
-	line-height: 22px;
-	padding-left: 26px;
-	margin-top: 30px;
-	margin-bottom: 0;
-	margin-left: 12px;
-	margin-right: 12px}
 
-div#content p	{font-size: 0.75em;
+
+article p	{
+	font-size: 0.75em;
 	line-height: 1.6;
 	margin-top: 10px;
 	margin-left: 12px;
 	margin-right: 12px}
 
 /* フッター */
-div#footer	{color: #ffffff;
+footer	{
+	color: #ffffff;
 	background-color: #005087;
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px}
 
-small	{font-size: 0.75em;
+small	{
+	font-size: 0.75em;
 	font-style: normal;
 	text-align: center;
     display: block}
 
 
 </style>
+
+<!--[if lt IE9]>
+<script src="htpp://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 </head>
 <body>
 
@@ -99,23 +105,29 @@ small	{font-size: 0.75em;
 <div id="container">
 
 <!-- ヘッダー -->
-<div id="header">
-<h1><img src="logo.gif" alt="Green Leaf" /></h1>
+<header>
+<h1>
+<!-- お問合せフォーム　-->
+<img src="logo.gif" alt="Green Leaf" /></h1>
 <p>生活を楽しくする情報をもっと身近にお届けします</p>
-</div>
+
 
 <!-- メニュー -->
-<ul id="menu">
-<li><a href="index.html">トップ</a></li>
-<li><a href="about.html">森の工房について</a></li>
-<li><a href="event.html">季節のイベント</a></li>
-<li><a href="contact.html">お問い合わせ</a></li>
-<li><a href="http://blog.xxx.xxx/">ブログ</a></li>
-</ul>
+<nav>
+	<ul>
+	<li><a href="koji.jpg">トップ</a></li>
+	<li><a href="http://wp15017.github.io/html.2nd/">森の工房について</a></li>
+	<li><a href="http://wp15017.github.io/html.3rd/">季節のイベント</a></li>
+	<li><a href="http://wp15017.github.io/html.4th/">お問い合わせ</a></li>
+	<li><a href="koji.jpg">ブログ</a></li>
+	</ul>
+</nav>
+
+</header>
 
 <!-- コンテンツ -->
-<div id="content">
-<h2>お問い合わせ</h2>
+<article>
+<h1>お問い合わせ</h1>
 
 <p id="summary">ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。また、森の工房やイベントに関するご質問などもお気軽にお寄せください。<br />
 （※送信後はトップページに戻ります。）</p>
@@ -144,15 +156,15 @@ small	{font-size: 0.75em;
 
 </form>
 
-</div>
+</article>
 
 <!-- フッター -->
-<div id="footer">
+<footer>
 <small>
 Powered by <a href="http://www.rescue.ne.jp/">CGI RESCUE</a><sup>&reg;</sup> ／
 Copyright (C) <a href="mailto:forest@web.mail">Forest Studio</a>
 </small>
-</div>
+</footer>
 
 </div>
 
