@@ -159,6 +159,8 @@ article p	{
 	margin-left: 0px;
 	margin-right: 0px}
 
+input:focus{outline: solid; 3px rgba(159,256,16,0,0.5)}
+
 /* フッター */
 footer	{
 	color: #888888;
@@ -235,8 +237,8 @@ input[type="submit"]{
     width: 200px;
     background-color: #cef178}
 
-input:required {
-	background-image: url(caution.png);
+input:required,input:invalad
+   {background-image: url(caution.png);
     background-repeat: no-repeat;
     background-position: right center}
 
@@ -468,7 +470,7 @@ article section figure {margin-left:0}
 <header>
 <h1>お問い合わせ</h1>
 
-<p id="summary">ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。また、森の工房やイベントに関するご質問などもお気軽にお寄せください。<br />
+<p id="summary">ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。また、森の工房やイベントに関するご質問などもお気軽にお寄せください。<br>
 （※送信後はトップページに戻ります。）</p>
 </header>
 
@@ -478,19 +480,19 @@ article section figure {margin-left:0}
 <input type="hidden" name="_subject" value="FORM MAIL" />
 
 <p><label>名前<span>（必須）</span>：<br>
-<input type="text" name="namae" size="40">
+<input type="text" name="namae" size="40" required placeholder="名前を入力してください"　autofocus>
 </label></p>
 
 <p><label>メールアドレス<span>（必須）</span>：<br>
-<input type="email" name="mail" size="40" required>
+<input type="email" name="mail" size="40" required placeholder="メールアドレスをを入力してください">
 </label></p>
 
 <p><label>URL：<br>
-<input type="url" name="url" size="40" required>
+<input type="url" name="url" size="40" required placeholder="ホームページのURLを入力してください">
 </label></p>
 
 <p><label>コメント：<br>
-<textarea name="comment" cols="50" rows="8"></textarea>
+<textarea name="comment" cols="50" rows="8"　required placeholder="コメントなどを入力してください"></textarea>
 </label></p>
 
 <p id="button">
